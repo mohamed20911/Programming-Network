@@ -1,0 +1,235 @@
+/* Start Global Roles */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+:root {
+          --main-color: #2196f3;
+          --main-transition: 0.3s;
+          --main-duration: 0.5s;
+}
+
+.container {
+          padding-left: 15px;
+          padding-right: 15px;
+          margin-left: auto;
+          margin-right: auto;
+}
+
+/* Small */
+
+@media (min-width: 768px) {
+          .container {
+                    width: 750px;
+          }
+}
+
+/* Medium */
+
+@media (min-width: 992px) {
+          .container {
+                    width: 970px;
+          }
+}
+
+/* Large */
+
+@media (min-width: 1200px) {
+          .container {
+                    width: 1170px;
+          }
+}
+
+.main-title {
+          text-transform: uppercase;
+          margin: 0 auto 80px;
+          border: 2px solid black;
+          padding: 10px 20px;
+          font-size: 30px;
+          width: fit-content;
+          position: relative;
+          z-index: 1;
+          transition: var(--main-transition);
+          color: #FFFFFF;
+          background: #232323;
+          text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+          color: #FFFFFF;
+          background: #232323;
+          color: #FFFFFF;
+          background: #333333;
+          text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+          color: #FFFFFF;
+          background: #333333;
+}
+
+.main-title::before,
+.main-title::after {
+          content: "";
+          width: 12px;
+          height: 12px;
+          background-color: var(--main-color);
+          position: absolute;
+          border-radius: 50%;
+          top: 50%;
+          transform: translateY(-50%);
+}
+
+.main-title::before {
+          left: -30px;
+          color: #000;
+}
+
+.main-title::after {
+          right: -30px;
+}
+
+.main-title:hover::before {
+          z-index: -1;
+          animation: left-move 0.5s linear forwards;
+}
+
+.main-title:hover::after {
+          z-index: -1;
+          animation: right-move 0.5s linear forwards;
+}
+
+.main-title:hover {
+          color: white;
+          border: 2px solid white;
+          transition-delay: 0.5s;
+}
+
+ul {
+          display: flex;
+          list-style: none;
+}
+
+a {
+          text-decoration: none;
+}
+
+@keyframes left-move {
+          50% {
+                    left: 0;
+                    width: 12px;
+                    height: 12px;
+          }
+
+          100% {
+                    left: 0;
+                    border-radius: 0;
+                    width: 50%;
+                    height: 100%;
+          }
+}
+
+@keyframes right-move {
+          50% {
+                    right: 0;
+                    width: 12px;
+                    height: 12px;
+          }
+
+          100% {
+                    right: 0;
+                    border-radius: 0;
+                    width: 50%;
+                    height: 100%;
+          }
+}
+
+/* End Global Roles */
+
+/* Start Header */
+
+.header {
+          padding: 20px;
+}
+
+.header .container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+}
+
+.header .logo {
+          width: 350px;
+}
+
+.header .links {
+          position: relative;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+          width: 100%;
+}
+
+.header .links .icon {
+          width: 30px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+}
+
+.header .links .icon span {
+          background-color: #333;
+          margin-bottom: 5px;
+          height: 2px;
+}
+
+.header .links .icon span:first-child {
+          width: 100%;
+}
+
+.header .links .icon span:nth-child(2) {
+          width: 60%;
+          transition: var(--main-duration);
+}
+
+.header .links .icon span:last-child {
+          width: 100%;
+}
+
+.header .links ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          background-color: #f6f6f6;
+          position: absolute;
+          right: 0;
+          min-width: 200px;
+          top: calc(100% + 15px);
+          display: none;
+          z-index: 1;
+}
+
+.header .links ul::before {
+          content: "";
+          border-width: 10px;
+          border-style: solid;
+          border-color: transparent transparent #f6f6f6 transparent;
+          position: absolute;
+          right: 5px;
+          top: -20px;
+}
+
+.header .links:hover ul {
+          display: block;
+}
+
+.header .links ul li a {
+          display: block;
+          padding: 15px;
+          text-decoration: none;
+          color: #333;
+          transition: var(--main-duration);
+}
+
+.header .links ul li a:hover {
+          padding-left: 25px;
+}
+
+.header .links ul li:not(:last-child) a {
+          border-bottom: 1px solid #ddd;
+}
+
+/* End Header */

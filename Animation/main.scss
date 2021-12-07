@@ -1,0 +1,155 @@
+// Variables
+// ---------
+$animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$animation-duration: 1s;
+
+// Keyframes
+// ---------
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes slideInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes zoomReverseIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes flipInY {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+// Animations
+// ----------
+[data-animation] {
+  opacity: 0;
+  animation-timing-function: $animation-timing-function;
+  animation-fill-mode: both;
+  animation-duration: $animation-duration;
+}
+
+// Disable animation of the childs
+// Disable animation in yourself
+.animations-disabled {
+  &,
+  [data-animation] {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
+
+// Slide Animations
+.slideInUp {
+  animation-name: slideInUp;
+}
+.slideInDown {
+  animation-name: slideInDown;
+}
+.slideInLeft {
+  animation-name: slideInleft;
+}
+.slideInRight {
+  animation-name: slideInRight;
+}
+
+// Fade Animations
+.fadeIn {
+  animation-name: fadeIn;
+}
+.fadeOut {
+  animation-name: fadeIn;
+  animation-direction: reverse;
+}
+
+// Zoom Animations
+.zoomIn {
+  animation-name: zoomIn;
+}
+.zoomOut {
+  animation-name: zoomIn;
+  animation-direction: reverse;
+}
+.zoomReverseIn {
+  animation-name: zoomReverseIn;
+}
+.zoomReverseOut {
+  animation-name: zoomReverseIn;
+  animation-direction: reverse;
+}
+
+// Flip Animations
+.flipInY {
+  animation-name: flipInY;
+}
+.flipOutY {
+  animation-name: flipInY;
+  animation-direction: reverse;
+}
