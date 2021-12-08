@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+h1{
+    color: #008fff;
+    font-size: 15vmin;
+    text-align: center;
+    padding: 30px 0;
+}
+p{
+    font-size: 3vmin;
+    line-height: 2em;
+    letter-spacing: 0.05em;
+    text-align: justify;
+    margin: 50px 0;
+    padding: 0 30px;
+}
+#progress{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: grid;
+    place-items: center;
+}
+#progress-value{
+    display: block;
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 20px;
+}

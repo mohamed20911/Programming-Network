@@ -1,34 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-          <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Programming Network</title>
-          <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-          <!-- Start Header -->
-          <div class="header">
-                    <div class="container">
-                              <h1 class="logo">Programming Network</h1>
-                              <div class="links">
-                                        <span class="icon">
-                                                  <span></span>
-                                                  <span></span>
-                                                  <span></span>
-                                        </span>
-                                        <ul>
-                                                  <li><a href="#services">Services</a></li>
-                                                  <li><a href="#portfolio">Portfolio</a></li>
-                                                  <li><a href="#about">About</a></li>
-                                                  <li><a href="#contact">Contact</a></li>
-                                        </ul>
-                              </div>
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Network</title>
+    <!-- Boxicons CDN Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normlize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="progress">
+      <span id="progress-value"></span>
+    </div>
+    <!-- Start Header -->
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="bx bxl-c-plus-plus icon"></i>
+        <!-- <i class="fa-duotone fa-computer-classic icon"></i> -->
+        <div class="logo_name">Programming</div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Search..." class="input" />
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="#" class="li">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="#" class="li">
+            <i class="bx bx-user"></i>
+            <span class="links_name">User</span>
+          </a>
+          <span class="tooltip">User</span>
+        </li>
+        <li>
+          <a href="#" class="li">
+            <i class="bx bx-chat"></i>
+            <span class="links_name">Messages</span>
+          </a>
+          <span class="tooltip">Messages</span>
+        </li>
+        <li>
+          <a href="#" class="li">
+            <i class="bx bx-pie-chart-alt-2"></i>
+            <span class="links_name">Analytics</span>
+          </a>
+          <span class="tooltip">Analytics</span>
+        </li>
+        <li>
+          <a href="#" class="li">
+            <i class="bx bx-folder"></i>
+            <span class="links_name">File Manager</span>
+          </a>
+          <span class="tooltip">Files</span>
+        </li>
+        <li>
+          <a href="#" class="li">
+            <i class="bx bx-cart-alt"></i>
+            <span class="links_name">Order</span>
+          </a>
+          <span class="tooltip">Order</span>
+        </li>
+        <li>
+          <a href="#" class="li">
+            <i class="bx bx-heart"></i>
+            <span class="links_name">Saved</span>
+          </a>
+          <span class="tooltip">Saved</span>
+        </li>
+        <li>
+          <a href="#" class="li">
+            <i class="bx bx-cog"></i>
+            <span class="links_name">Setting</span>
+          </a>
+          <span class="tooltip">Setting</span>
+        </li>
+        <li class="profile">
+          <div class="profile-details">
+            <img src="Resourses/images/moh.png" alt="profileImg" />
+            <div class="name_job">
+              <div class="name">Mohamed Ehab</div>
+              <div class="job">Web Developer</div>
+            </div>
           </div>
-          <!-- End Header -->
-          <script src="js/main.js"></script>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</body>
+          <i class="bx bx-log-out" id="log_out"></i>
+        </li>
+      </ul>
+    </div>
+    <!-- End Header -->
+    <!-- Start Landing Page -->
+    <div class="landing">
+      <div class="container">
+        <div class="text">
+          <h1 class="fill">Welcome To <span class="color">Programing Network</span> 👀</h1>
+          <p>
+            Hello to The Website That have All courses !!!
+          </p>
+        </div>
+        <div class="image">
+          <img src="Resourses/SVGS/Developer.svg" />
+        </div>
+      </div>
+    </div>
+    <!-- End Landing Page -->
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
