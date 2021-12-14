@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Programming Network</title>
+    <title> Programming Network </title>
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- Boxicons CDN Link -->
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -14,141 +16,351 @@
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="Resourses/images/Programing (2).png">
+    <link rel="icon" href="Resourses/images/Programing (2).png" />
     <!-- Please link font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+      integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+      crossorigin="anonymous"
+    />
     <!-- Simple line icons-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
   </head>
   <body>
-    <div id="progress">
-      <span id="progress-value"></span>
-    </div>
-    <!-- Start Header -->
-    <div class="sidebar">
-      <div class="logo-details">
-        <i class="bx bxl-c-plus-plus icon"></i>
-        <!-- <i class="fa-duotone fa-computer-classic icon"></i> -->
-        <div class="logo_name">Programming</div>
-        <i class="bx bx-menu" id="btn"></i>
+    <div class="content">
+      <div id="progress">
+        <span id="progress-value"></span>
       </div>
-      <ul class="nav-list">
-        <li>
-          <i class="bx bx-search"></i>
-          <input type="text" placeholder="Search..." class="input" />
-          <span class="tooltip">Search</span>
-        </li>
-        <li>
-          <a href="index.html" class="li">
-            <i class="bx bx-grid-alt"></i>
-            <span class="links_name">Home</span>
-          </a>
-          <span class="tooltip">Home</span>
-        </li>
-        <li>
-          <a href="#Developers" class="li">
-            <i class="bx bx-user"></i>
-            <span class="links_name">Developers</span>
-          </a>
-          <span class="tooltip">Developers</span>
-        </li>
-        <li class="hello">
-          <a href="#" class="li">
-            <i class="bx bx-chat"></i>
-            <span class="links_name">Courses</span>
-          </a>
-          <span class="tooltip">Courses</span>
-        </li>
-        <li>
-          <a href="#" class="li">
-            <i class="bx bx-pie-chart-alt-2"></i>
-            <span class="links_name">Analytics</span>
-          </a>
-          <span class="tooltip">Analytics</span>
-        </li>
-        <li>
-          <a href="#" class="li">
-            <i class="bx bx-folder"></i>
-            <span class="links_name">File Manager</span>
-          </a>
-          <span class="tooltip">Files</span>
-        </li>
-        <li>
-          <a href="#" class="li">
-            <i class="bx bx-cart-alt"></i>
-            <span class="links_name">Order</span>
-          </a>
-          <span class="tooltip">Order</span>
-        </li>
-        <li>
-          <a href="#" class="li">
-            <i class="bx bx-heart"></i>
-            <span class="links_name">Saved</span>
-          </a>
-          <span class="tooltip">Saved</span>
-        </li>
-        <li>
-          <a href="#" class="li">
-            <i class="bx bx-cog"></i>
-            <span class="links_name">Setting</span>
-          </a>
-          <span class="tooltip">Setting</span>
-        </li>
-        <li class="profile">
-          <div class="profile-details">
-            <img src="Resourses/images/moh.png" alt="profileImg" />
-            <div class="name_job">
-              <div class="name">Mohamed Ehab</div>
-              <div class="job">Web Developer</div>
+      <!-- Start Header -->
+      <div class="sidebar">
+        <div class="logo-details">
+          <i class="bx bxl-c-plus-plus icon"></i>
+          <!-- <i class="fa-duotone fa-computer-classic icon"></i> -->
+          <div class="logo_name">Programming</div>
+          <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+          <li>
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Search..." class="input" />
+            <span class="tooltip">Search</span>
+          </li>
+          <li>
+            <a href="index.html" class="li">
+              <i class="bx bx-grid-alt"></i>
+              <span class="links_name">Home</span>
+            </a>
+            <span class="tooltip">Home</span>
+          </li>
+          <li>
+            <a href="#Developers" class="li">
+              <i class="bx bx-user"></i>
+              <span class="links_name">Developers</span>
+            </a>
+            <span class="tooltip">Developers</span>
+          </li>
+          <li class="hello">
+            <a href="" class="li">
+              <i class="bx bx-chat"></i>
+              <span class="links_name">Courses</span>
+            </a>
+            <span class="tooltip">Courses</span>
+          </li>
+          <li>
+            <a href="#" class="li">
+              <i class="bx bx-pie-chart-alt-2"></i>
+              <span class="links_name">Analytics</span>
+            </a>
+            <span class="tooltip">Analytics</span>
+          </li>
+          <li>
+            <a href="#" class="li">
+              <i class="bx bx-folder"></i>
+              <span class="links_name">File Manager</span>
+            </a>
+            <span class="tooltip">Files</span>
+          </li>
+          <li>
+            <a href="#" class="li">
+              <i class="bx bx-cart-alt"></i>
+              <span class="links_name">Order</span>
+            </a>
+            <span class="tooltip">Order</span>
+          </li>
+          <li>
+            <a href="#" class="li">
+              <i class="bx bx-heart"></i>
+              <span class="links_name">Saved</span>
+            </a>
+            <span class="tooltip">Saved</span>
+          </li>
+          <li>
+            <a href="#" class="li">
+              <i class="bx bx-cog"></i>
+              <span class="links_name">Setting</span>
+            </a>
+            <span class="tooltip">Setting</span>
+          </li>
+          <li class="profile">
+            <div class="profile-details">
+              <img src="Resourses/images/moh.png" alt="profileImg" />
+              <div class="name_job">
+                <div class="name">Mohamed Ehab</div>
+                <div class="job">Web Developer</div>
+              </div>
+            </div>
+            <i class="bx bx-log-out" id="log_out"></i>
+          </li>
+        </ul>
+      </div>
+      <!-- End Header -->
+      <!-- Navigation-->
+      <a class="menu-toggle rounded" href=""><i class="fas fa-bars"></i></a>
+      <nav id="sidebar-wrapper" id="sidebar4">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand">Programming Network</li>
+          <li class="sidebar-nav-item"><a href="./index.html">Home</a></li>
+          <li class="sidebar-nav-item"><a href="./pages/About.html">About</a></li>
+          <li class="sidebar-nav-item"><a href="./pages/Site Map.html">Courses</a></li>
+          <li class="sidebar-nav-item"><a href="./pages/contact.html">Contact</a></li>
+          <!-- <li class="sidebar-nav-item"><a href="">Python</a></li>
+          <li class="sidebar-nav-item"><a href="">Html</a></li>
+          <li class="sidebar-nav-item"><a href="">CSS</a></li>
+          <li class="sidebar-nav-item"><a href="">Javascript</a></li>
+          <li class="sidebar-nav-item"><a href="./pages/php.html">PHP</a></li>
+          <li class="sidebar-nav-item"><a href="./pages/java.html">Java</a></li> -->
+          <div class="sec-center"> 	
+            <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+            <label class="for-dropdown" for="dropdown"> Languages <i class="uil uil-arrow-down"></i></label>
+            <div class="section-dropdown"> 
+              <a href="#"> Python <i class="uil uil-arrow-right"></i></a>
+              <a href="#"> Html <i class="uil uil-arrow-right"></i></a>
+              <a href="#"> CSS <i class="uil uil-arrow-right"></i></a>
+              <a href="#"> Javascript <i class="uil uil-arrow-right"></i></a>
+              <a href="#"> PHP <i class="uil uil-arrow-right"></i></a>
+              <a href="#"> Java <i class="uil uil-arrow-right"></i></a>
             </div>
           </div>
-          <i class="bx bx-log-out" id="log_out"></i>
-        </li>
-      </ul>
-    </div>
-    <!-- End Header -->
-    <!-- Navigation-->
-    <a class="menu-toggle rounded" href=""><i class="fas fa-bars"></i></a>
-    <nav id="sidebar-wrapper" id="sidebar4">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand">Programming Network</li>
-            <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-            <li class="sidebar-nav-item"><a href="#about">About</a></li>
-            <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-            <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
-    <!-- Start Landing Page -->
-    <div class="landing">
-      <div class="container">
-        <div class="text">
-          <h1 class="fill">Welcome To <span class="color">Programing Network</span> 👀</h1>
-          <p>
-            Hello to The Website That have All courses !!!
-          </p>
+      </nav>
+      <!-- Navigation -->
+      <div class="side-menu">
+        <div class="toggle-btn fas fa-chevron-left"></div>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+          Facebook
+        </a>
+    
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+          Twitter
+        </a>
+    
+        <a href="#">
+          <i class="fab fa-youtube"></i>
+          Youtube
+        </a>
+    
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+          Instagram
+        </a>
+    
+        <a href="#">
+          <i class="fab fa-discord"></i>
+          Discord
+        </a>
+    
+      </div>
+      <!-- Start Landing Page -->
+      <div class="landing">
+        <div class="container">
+          <div class="text">
+            <h1 class="fill">
+              Welcome To <span class="color auto-type"></span> 👀
+            </h1>
+            <p>Hello to The Website That have All courses !!!</p>
+          </div>
+          <div class="image">
+            <!-- <img src="Resourses/SVGS/Developer.svg" /> -->
+            <img src="Resourses/SVGS/code-review-animate.svg" />
+            <!-- <img src="Resourses/GIFS/Indigo and Cyan Futuristic Neon E-sports Animated Logo.mp4" alt=""> -->
+          </div>
         </div>
-        <div class="image">
-          <img src="Resourses/SVGS/Developer.svg" />
+      </div>
+      <!-- End Landing Page -->
+      <!-- Start Developers -->
+      <div class="container" id="Developers">
+        <div class="card">
+          <img src="Resourses/images/moh.png" />
+          <h5>Mohamed Ehab</h5>
+          <h3>Web Developer</h3>
+        </div>
+        <div class="button">
+          <div class="content">
+            <i class="bx bx-cloud-download"></i>
+            <a class="button-text" href="./CV/Egypt.docx">Download CV</a>
+          </div>
+        </div>
+        <div class="card2">
+          <img src="Resourses/images/Programing.png" />
+          <h5 class="h5">Zayad Haggag</h5>
+          <h3 class="h5">Web Developer</h3>
         </div>
       </div>
+      <!-- End Developers -->
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <!-- Start Footer -->
+      <!-- Site footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">
+                Programming Network <i> The Courses you found in it </i> is an initiative to
+                help the upcoming programmers with the code. Programming Network focuses on
+                providing the most efficient code or snippets as the code wants to
+                be simple. We will help programmers build up concepts in different
+                programming languages that include C, C++, Java, HTML, CSS,
+                Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.
+              </p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="pages/c-language.html">C</a></li>
+                <li>
+                  <a href="pages/UI Design.html"
+                    >UI Design</a
+                  >
+                </li>
+                <li>
+                  <a href="pages/php.html"
+                    >PHP</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="pages/java.html"
+                    >Java</a
+                  >
+                </li>
+                <li>
+                  <a href="pages/Andriod.html">Android</a>
+                </li>
+                <li>
+                  <a href="pages/Templates.html">Templates</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="pages/Channels.html">Channels</a></li>
+                <li><a href="pages/About.html">About Us</a></li>
+                <li><a href="pages/contact.html">Contact Us</a></li>
+                <li><a href="pages/Site Map.html">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+        </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li>
+                  <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a class="dribbble" href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a class="youtube" href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                  <p class="copyright-text">
+                    Copyright &copy; 2022 All Rights Reserved by
+                    <a href="#Developers">Developers</a>.
+                  </p>
+                </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
     </div>
-    <!-- End Landing Page -->
-    <!-- Start Developers -->
-    <div class="container" id="Developers">
-      <div class="card">
-        <img src="Resourses/images/moh.png" />
-        <h5>Mohamed Ehab</h5>
-        <h3>Web Developer</h3>
-      </div>
-      <div class="card2">
-        <img src="Resourses/images/" />
-        <h5 class="h5">Zayad Haggag</h5>
-        <h3 class="h5">Web Developer</h3>
-      </div>
+    <!-- Start Loader -->
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
     </div>
-    <!-- End Developers -->
+    <!-- End Loader -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/loader.js"></script>
+    <script src="js/Auto-type.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/side.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/sideMenu.js"></script>
+    <script src="./js/cursor.js"></script>
   </body>
 </html>
